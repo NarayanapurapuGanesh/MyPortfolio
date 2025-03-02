@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('b5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+  }
+  
+  header {
+    color: white;
+    text-align: left;
+    padding: 2px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  .intro {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-image {
+   border-radius: 50%;
+   border-color: rgb(236, 212, 212);
+   border-style:solid;
+  transition: transform 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  .name {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: grey
+  }
+  .sections-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    gap: 20px; /* Spacing between sections */
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  section {
+    flex: 1 1 15%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    min-width: 230px;
+  }
+  section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adding more shadow on hover */
+    backdrop-filter: none; /* Remove blur from hovered section */
+    opacity: 1; /* Full opacity for hovered section */
+    z-index: 10;
+  
+  }
+  .about p{
+    text-align: center;
+  }
+  
+  
+  h2, h1 {
+    color: black;
+    text-align: center;
+  }
+  h3{
+    color: rgb(90, 140, 90);
+    margin-right: 40px;
+  }
+  
+  hr {
+    border: 1px solid #ddd;
+  }
+  .fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .skills li {
+    background-color: #e8f5e9; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills li:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .contact{
+    text-align: center;
+    padding: 3px;
+  }
+  
+  .contact a {
+    color: #5E8B7E;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    
+    color: rgb(0, 0, 0);
+   /* position: fixed;*/
+    width: 100%;
+    bottom: 0;
+  }
